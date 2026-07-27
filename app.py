@@ -1,10 +1,6 @@
 import streamlit as st
-from google.genai import Client
-
-client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
-
-st.title("📧 AI Email Writing Assistant")
-
+from google. genai import Client
+client = Client(api_key=st.secrets["GEMINI_API_KEY"])
 st.write("Generate professional emails using Gemini AI.")
 
 email_type = st.selectbox(
