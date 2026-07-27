@@ -1,7 +1,7 @@
 import streamlit as st
 from google import genai
 
-client = genai.Client(api_key="AIzaSyA5Y6LWNXJ6v7aUB1yBcBxRobsp42X4aDc")
+client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
 
 st.title("📧 AI Email Writing Assistant")
 
